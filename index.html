@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Define el idioma del documento como español -->
+<head>
+    <meta charset="UTF-8"> <!-- Establece la codificación de caracteres a UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura la vista para dispositivos móviles -->
+    <title>Circo Maravillas</title> <!-- Título que aparecerá en la pestaña del navegador -->
+    
+    <!-- Enlaza la hoja de estilos de Bootstrap desde un CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Enlaza la hoja de estilos personalizada -->
+    <link href="styles.css" rel="stylesheet">
+    
+    <!-- Enlaza la fuente 'Mulish' desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Enlaza la fuente 'Carnival' desde una fuente CDN -->
+    <link href="https://fonts.cdnfonts.com/css/carnival" rel="stylesheet">
+</head>
+<body>
+    <!-- Encabezado y barra de navegación -->
+    <header class="navbar navbar-expand-lg"> <!-- Clase de Bootstrap para navbar -->
+        <div class="container"> <!-- Contenedor para el contenido de la navbar -->
+            <a class="navbar-brand" href="index.html"> <!-- Logo de la marca que enlaza a la página de inicio -->
+                <img src="Imagenes/logo_circo.png" alt="Inicio" width="40" height="40"> <!-- Imagen del logo -->
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"> <!-- Botón para colapsar el menú en pantallas pequeñas -->
+                <span class="navbar-toggler-icon"></span> <!-- Icono del botón de colapso -->
+            </button>
+            <nav class="collapse navbar-collapse" id="navbarNav"> <!-- Menú de navegación colapsable -->
+                <ul class="navbar-nav ms-auto"> <!-- Lista de elementos de navegación alineados a la derecha -->
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="proyecto.html">Proyecto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="avances.html">Avances</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sitioProyecto.html">Sitio del Proyecto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Carrusel de imágenes -->
+    <div id="imageBanner" class="carousel slide" data-bs-ride="carousel"> <!-- Carrusel de Bootstrap -->
+        <div class="carousel-inner"> <!-- Contenedor para las imágenes del carrusel -->
+            <div class="carousel-item active"> <!-- Primer elemento del carrusel, activo por defecto -->
+                <img src="Imagenes/circo.png" class="d-block w-100" alt="Circo El Lucero 1"> <!-- Imagen del circo -->
+            </div>
+            <div class="carousel-item"> <!-- Segundo elemento del carrusel -->
+                <img src="Imagenes/gradas circo.png" class="d-block w-100" alt="Circo El Lucero 2"> <!-- Imagen de las gradas -->
+            </div>
+            <div class="carousel-item"> <!-- Tercer elemento del carrusel -->
+                <img src="Imagenes/calecita circo.png" class="d-block w-100" alt="Circo El Lucero 3"> <!-- Imagen de la calesita -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Contenido principal -->
+    <main class="container my-5"> <!-- Contenedor principal con margen superior e inferior -->
+        <h1 class="text-center mb-5">Circo Maravillas</h1> <!-- Título principal centrado -->
+        <div class="row align-items-center"> <!-- Fila para alinear elementos -->
+            <div class="col-md-12"> <!-- Columna que ocupa todo el ancho en pantallas medianas y grandes -->
+                <p class="lead"> <!-- Párrafo destacado -->
+                    El sitio web del Circo Maravillas es una ventana al mágico mundo del entretenimiento circense, 
+                    ofreciendo una experiencia única para toda la familia. Con espectáculos vibrantes llenos de 
+                    acrobacias, payasos, y actos impresionantes, nuestro circo busca llevar la alegría y la 
+                    emoción a cada rincón de Argentina.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="py-4 mt-5"> <!-- Pie de página con espaciado superior e inferior -->
+        <div class="container"> <!-- Contenedor para el contenido del pie de página -->
+            <div class="row"> <!-- Fila para alinear elementos en el pie de página -->
+                <div class="col-md-6"> <!-- Columna que ocupa la mitad del ancho en pantallas medianas y grandes -->
+                    <p>&copy; Todos los derechos reservados.</p> <!-- Derechos de autor -->
+                    <p>&copy; Sitio desarrollado como práctica para la materia Diseño y Desarrollo Web.</p> <!-- Información adicional -->
+                    <a href="contacto.html">Contacto</a> <!-- Enlace al formulario de contacto -->
+                </div>
+                <div class="col-md-6 text-md-end"> <!-- Columna que ocupa la otra mitad y alinea el contenido a la derecha -->
+                    <a href="https://github.com/DisenoWeb-UADE/CircoMaravillasAvanceG1.git" target="_blank" class="me-3"> <!-- Enlace a GitHub -->
+                        <img src="Imagenes/github.png" alt="GitHub" width="40" height="40"> <!-- Icono de GitHub -->
+                    </a>
+                    <a href="https://www.figma.com" target="_blank" class="me-3"> <!-- Enlace a Figma -->
+                        <img src="Imagenes/figma.png" alt="Figma" width="40" height="40"> <!-- Icono de Figma -->
+                    </a>
+                    <a href="https://www.uade.edu.ar/" target="_blank"> <!-- Enlace a UADE -->
+                        <img src="Imagenes/uade.png" alt="UADE" width="150" height="90"> <!-- Icono de UADE -->
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Enlaza el script de Bootstrap desde un CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Enlaza un archivo de script personalizado (script.js) -->
+    <script src="script.js"></script>
+</body>
+</html>

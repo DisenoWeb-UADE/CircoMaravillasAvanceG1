@@ -1,0 +1,129 @@
+/* Estilos generales para el cuerpo del documento */
+body {
+    font-family: 'Mulish', sans-serif; /* Fuente del cuerpo */
+    color: #000000; /* Color del texto */
+    background-color: #FFFFFF; /* Color de fondo */
+
+    display: flex; /* Usa flexbox para alinear los elementos */
+    flex-direction: column; /* Coloca los elementos en columna */
+    min-height: 100vh; /* Asegúrate de que el cuerpo ocupa al menos el alto de la ventana */
+}
+
+/* Estilos para la barra de navegación y el pie de página */
+.navbar, footer {
+    background-color: #0D0D0D; /* Color de fondo oscuro */
+}
+
+/* Estilos para los enlaces de la barra de navegación y el pie de página */
+.navbar-nav .nav-link, footer, footer a {
+    color: #FFFFFF !important; /* Color blanco para los enlaces */
+}
+
+/* Estilo para el icono del botón de la barra de navegación (toggler) */
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); /* Imagen SVG como fondo del icono */
+}
+
+/* Estilos para el contenido principal */
+main {
+    font-family: 'Carnival', sans-serif; /* Fuente del contenido principal */
+    flex: 1; /* Permite que el main tome el espacio disponible */
+
+}
+
+/* Estilos para los encabezados h1 dentro de main */
+main h1 {
+    color: #0D0D0D; /* Color del texto del encabezado */
+    font-size: 3rem; /* Tamaño de fuente del encabezado */
+    margin-bottom: 2rem; /* Margen inferior para separar de otros elementos */
+}
+
+/* Estilo para la clase lead (generalmente texto destacado) */
+.lead {
+    font-size: 1.2rem; /* Tamaño de fuente */
+    line-height: 1.6; /* Altura de línea */
+    border: 2px solid #6650F2; /* Borde de color */
+    padding: 80px; /* Espaciado interno */
+    border-radius: 10px; /* Esquinas redondeadas */
+    background-color: #6650F2; /* Color de fondo */
+    color: #FFFFFF; /* Color del texto para mejorar la legibilidad */
+    font-family: 'Circus', sans-serif; /* Tipo de letra: Carnival */
+    font-weight: normal; /* Ajusta el peso según sea necesario */
+
+}
+
+/* Espaciado inferior para el elemento con id imageBanner */
+#imageBanner {
+    margin-bottom: 2rem; /* Margen inferior */
+}
+
+/* Estilos para las imágenes dentro de los elementos de carrusel */
+.carousel-item img {
+    height: 700px; /* Altura fija para las imágenes */
+    object-fit: cover; /* Ajuste de la imagen para cubrir el área sin distorsionar */
+    width: 100%; /* Ancho del banner */
+
+    
+}
+
+/* Estilo para una clase de fondo púrpura claro */
+.bg-light-purple {
+    background-color: #6650F2; /* Color de fondo */
+    color: #FFFFFF; /* Color del texto */
+    padding: 2rem; /* Espaciado interno */
+    margin: 2rem 0; /* Margen vertical */
+    border-radius: 10px; /* Esquinas redondeadas */
+}
+
+/* Estilo para una clase de fondo gris claro */
+.bg-light-gray {
+    background-color: #F2F2F2; /* Color de fondo */
+    padding: 2rem; /* Espaciado interno */
+    margin: 2rem 0; /* Margen vertical */
+    border-radius: 10px; /* Esquinas redondeadas */
+}
+
+/* Estilo para los enlaces en el pie de página al pasar el cursor */
+footer a:hover {
+    text-decoration: underline; /* Subrayar el texto al pasar el ratón */
+}
+
+/* Estilos responsivos para dispositivos con un ancho máximo de 768px */
+@media (max-width: 768px) {
+    main h1 {
+        font-size: 2.5rem; /* Reducir el tamaño del encabezado en pantallas pequeñas */
+    }
+    
+    .carousel-item img {
+        height: 200px; /* Reducir la altura de las imágenes en carrusel en pantallas pequeñas */
+    }
+}
+
+
+/*Tarjetas de Nosotros*/
+.card {
+    border: 2px solid #6650F2; /* Borde de las tarjetas */
+    background-color: #6650F2; /* Color de fondo */
+    border-radius: 10px; /* Esquinas redondeadas */
+    display: flex; /* Usa Flexbox para centrar el contenido */
+    flex-direction: column; /* Alinea los elementos en columna */
+    align-items: center; /* Centra horizontalmente el contenido */
+    text-align: center; /* Centra el texto dentro de la tarjeta */
+    height: 400px; /* Establece una altura fija para la tarjeta */
+}
+
+.card-img-top {
+    width: 200px; /* Ajusta el ancho de la imagen según sea necesario */
+    height: 200px; /* Ajusta la altura para que sea un círculo perfecto */
+    border-radius: 50%; /* Borde redondeado para hacer la imagen circular */
+    object-fit: cover; /* Asegura que la imagen llene el área sin distorsionarse */
+    border: 2px solid #6650F2; /* Borde alrededor de la imagen */
+    margin-bottom: 15px; /* Espaciado entre la imagen y el texto */
+}
+
+
+
+
+
+
+
