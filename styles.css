@@ -343,3 +343,126 @@ footer .logo img {
     transform: scale(0.9);
 }
 
+/** IDENTIDAD VISUAL **/
+
+.circo-identidad-visual {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.circo-identidad-visual::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('Imagenes/circo2.png');
+    background-size: cover;
+    background-position: center;
+    filter: blur(3px); 
+    transform: scale(1.1); 
+    z-index: -1; 
+}
+
+.container-identidad-visual {
+    margin: 8rem 5rem 20rem 5rem; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+}
+
+.container-identidad-visual h2 {
+    color:black;
+    background-color: rgb(204, 163, 82);
+    text-align: center;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.tipografia-section-identidad-visual,
+.paleta-section-identidad-visual,
+.logo-section-identidad-visual,
+.mapa-section-identidad-visual {
+    background-color: rgba(65, 2, 2, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.logo-display-identidad-visual img {
+    width: 100%;     
+    max-width: 100px;  
+    height: auto;      
+    object-fit: contain; 
+    margin: 0 auto;     
+    display: block;    
+}
+
+.tipografia-section-identidad-visual {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.paleta-section-identidad-visual {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.logo-section-identidad-visual {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+.mapa-section-identidad-visual {
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+}
+
+.mapa-display-identidad-visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.identidad-visual2 strong {
+    font-family: 'Rum Raisin', sans-serif;
+    font-size: 20px;
+}
+
+.identidad-visual1 strong {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+}
+
+
+.color {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+.paleta-section-identidad-visual {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.paleta-identidad-visual {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
