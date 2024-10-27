@@ -157,114 +157,131 @@ footer .logo img {
 
 
 /**NOSTROS**/
-
-
 .hero-nostros {
     position: relative;
     width: 100%;
-    height: 100vh; /* Ocupa toda la altura del viewport */
-    overflow: hidden; /* Evita que haya barras de desplazamiento */
-
-
+    min-height: 100vh;
+    overflow: hidden;
+    padding: 100px 0;
+    box-sizing: border-box;
 }
 
 .hero-nostros img {
-    position: absolute; /* La imagen se coloca absolutamente en el contenedor */
-    /*top: 50%;
-    left: 50%;*/
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    transform: translate(-50%, -50%);
-    object-fit: cover; /* Mantiene la proporción de la imagen */
-    z-index: -1; /* Asegura que la imagen esté detrás del texto y las tarjetas */
-
-
-    top: 0; /* Cambiar a 0 para que la imagen cubra todo el contenedor */
+    position: absolute;
+    top: 0;
     left: 0;
-
-
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
 }
 
 .texto-nosotros {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%); /* Centra el texto */
-    text-align: center; /* Centra el texto */
-    color: white; /* Color del texto */
-    z-index: 1; /* Asegura que el texto esté encima de la imagen */
-    top: 20%; /* Ajusta este valor según sea necesario */
-  
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+    z-index: 1;
+}
 
+.texto-nosotros h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.team-member {
+    flex: 0 1 300px;
+    max-width: 300px;
 }
 
 .card-hero {
-    position: relative; /* Cambia a relative para que se alineen en la columna */
-    z-index: 1; /* Coloca las tarjetas por encima de la imagen de fondo */
-    transition: transform 0.3s; /* Animación suave al pasar el mouse */
-    margin-bottom: 20px; /* Espacio entre las tarjetas */
-    margin-top: 100px; /* Ajusta este valor para mover las tarjetas hacia abajo */
-    margin: 20px; /* Espacio alrededor de cada tarjeta */
-    width: 80%; /* Ajusta el ancho según sea necesario */
-}
-
-
-
-
-
-.card-hero .card {
-    background-color: rgba(255, 255, 255, 0); /* Fondo completamente transparente */
-    border-radius: 10px; /* Esquinas redondeadas */
-    overflow: hidden; /* Asegura que el contenido no sobresalga */
-
-    display: flex; /* Usar flexbox para alinear el contenido */
-    flex-direction: column; /* Coloca los elementos en columna */
-    height: 100%; /* Asegura que la tarjeta ocupe todo el espacio disponible */
+    perspective: 1000px;
+    transition: transform 0.6s;
 }
 
 .card-hero:hover {
-    transform: scale(1.05); /* Aumenta ligeramente el tamaño de la tarjeta al pasar el mouse */
+    transform: scale(1.05);
 }
 
-.card-hero .card img {
-    /*height: 100px; /* Ajusta la altura de las imágenes */
-    object-fit: cover; /* Asegura que la imagen ocupe todo el espacio disponible */
-    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con opacidad */
-    border-radius: 10px; /* Esquinas redondeadas */
-    overflow: hidden; /* Asegura que el contenido no sobresalga */
-    min-height: 250px; /* Establece una altura mínima */
+.card {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
 
+.card-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
 
-
-    height: auto; /* Deja que la imagen mantenga su proporción */
-    width: 100%; /* Asegura que la imagen ocupe todo el ancho de la tarjeta */
-    max-height: 200px; /* Limita la altura máxima de la imagen */
-
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s;
 }
 
 .card-body {
-    flex: 1; /* Esto asegura que el cuerpo de la tarjeta ocupe el espacio restante */
-    display: flex;
-    flex-direction: column; /* Alinear el texto en columna */
-    justify-content: center; /* Centrar el texto verticalmente */
-    text-align: center; /* Centrar el texto horizontalmente */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    color: white;
+    transform: translateY(100%);
+    transition: transform 0.6s;
 }
 
-
-.row {
-    display: flex; /* Usar Flexbox */
-    flex-wrap: wrap; /* Permitir que se envuelvan */
-    justify-content: center; /* Centrar tarjetas horizontalmente */
-    z-index: 2; /* Asegura que las tarjetas estén por encima de la imagen */    
-    margin-top: 220px; /* Aumenta este valor según necesites para espaciado */
-
+.card:hover .card-body {
+    transform: translateY(0);
 }
 
+.card:hover .card-image img {
+    transform: scale(1.1);
+}
 
-.col-md-4 {
-    flex: 0 0 45%; /* Define un ancho del 45% para que quepan dos tarjetas por fila */
-    margin: 10px; /* Margen alrededor de cada tarjeta */
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+    .team-member {
+        flex: 0 1 calc(50% - 15px);
+        max-width: calc(50% - 15px);
+    }
+}
+
+@media (max-width: 480px) {
+    .team-member {
+        flex: 0 1 100%;
+        max-width: 100%;
+    }
 }
 
 
