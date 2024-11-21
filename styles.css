@@ -385,11 +385,12 @@ footer .logo img {
 }
 
 .container-identidad-visual {
-    margin: 8rem 5rem 20rem 5rem; 
-    display: grid;
+    margin: 6rem 5rem 20rem 5rem; 
+    display: flex;
+    flex-wrap: wrap;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
-    gap: 20px;
+    gap: 15px;
 }
 
 .container-identidad-visual h2 {
@@ -404,6 +405,7 @@ footer .logo img {
 .paleta-section-identidad-visual,
 .logo-section-identidad-visual,
 .mapa-section-identidad-visual {
+    width: 100%;
     background-color: rgba(65, 2, 2, 0.9);
     padding: 20px;
     border-radius: 10px;
@@ -412,7 +414,7 @@ footer .logo img {
 
 .logo-display-identidad-visual img {
     width: 100%;     
-    max-width: 100px;  
+    max-width: 75px;  
     height: auto;      
     object-fit: contain; 
     margin: 0 auto;     
@@ -456,6 +458,11 @@ footer .logo img {
     font-size: 20px;
 }
 
+.identidad-visual3 strong {
+    font-family: 'Mulish', sans-serif;
+    font-size: 20px;
+}
+
 
 .color {
     width: 60px;
@@ -483,3 +490,32 @@ footer .logo img {
     grid-template-columns: repeat(4, 1fr);
     gap: 5px;
 }
+
+/* SECCION AVANCES */
+.hero-avances {
+    background-image: url('Imagenes/ruta-del-fondo-circo.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    height: 100vh; /* Ocupa toda la altura del viewport */
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-avances > div {
+    width: 100%; /* Ocupa todo el ancho de la sección */
+    max-width: 1600px; /* Opcional: limita el tamaño máximo */
+    text-align: center; /* Opcional: centra el contenido dentro del div */
+}
+
+.video-container-avances iframe {
+    width: 100%;
+    height: 70vh;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    max-width: 1300px;
+}
+
